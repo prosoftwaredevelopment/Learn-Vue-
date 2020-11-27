@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Learn Vue3
+    </title>
+</head>
+
+<body>
+    <div id="myapp3">
+        <input type="checkbox"  v-model="myflag">
+       <h1> {{myflag}}</h1>
+       <textarea v-model="textareamsg"></textarea>
+       <h1>{{textareamsg}}</h1>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+        const VueComponent = new Vue({
+            el : "#myapp3",
+            data : {
+                myflag : false,
+                textareamsg : ""
+            },
+            methods : {
+
+            }
+        })
+     
+        
+    </script>
+</body>
+
+</html>

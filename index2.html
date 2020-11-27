@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>
+        Learn Vue2
+    </title>
+</head>
+
+<body>
+
+    <div id="myapp2">
+        <h1 @click="hideMethod" v-if="flag">{{text}}</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+       const vueComponent2 = new Vue({
+           el : "#myapp2",
+           data : {
+           counter : 0,
+            text : "Hello World",
+            flag : true
+           },
+           methods : {
+            incrementCounter(){
+                this.counter++
+            },
+            hideMethod(){
+                if(this.flag == true){
+                    this.flag = false
+                }
+            }
+           }
+       })
+       
+        
+    </script>
+</body>
+
+</html>
