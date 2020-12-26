@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Learn Vue Tutorial Number 4</title>
+    </head>
+    <body>
+        <form id="fruits">
+            <input type="checkbox" id="apple" value="apple" v-model="checkedfruits">
+            <label for="apple">apple</label>
+            <input type="checkbox" id="mango" value="mango" v-model="checkedfruits">
+            <label for="mango">mango</label>
+            <input type="checkbox" id="pineapple" value="pineapple" v-model="checkedfruits">
+            <label for="pineapple">pineapple</label>
+            <br>
+            <h1>{{checkedfruits}}</h1>
+        </form>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+        const vueComponent = new Vue({
+            el : "#fruits",
+            data : {
+                checkedfruits : []
+            },
+            methods : {
+
+            }
+        })
+        console.log(vueComponent)
+    </script>
+    </body>
+</html>

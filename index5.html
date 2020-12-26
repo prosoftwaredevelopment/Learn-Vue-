@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Learn Vue Tutorial Number 5</title>
+    </head>
+    <body>
+        <div id="myform">
+            <input type="radio" id="male" value="male" v-model="gender" >
+            <label for="male">male</label>
+            <input type="radio" id="female" value="female" v-model="gender">
+            <label for="female">female</label>
+            <h1>{{gender}}</h1>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+        const vueComponent = new Vue({
+            el : "#myform",
+            data : {
+                gender : null
+            },
+            methods : {
+
+            }
+        })
+        console.log(vueComponent)
+    </script>
+    </body>
+</html>
